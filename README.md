@@ -2,6 +2,7 @@ Directory Structure
 
 [Inspired in cookiecutter](https://cookiecutter-data-science.drivendata.org/#directory-structure)
 
+```
 ── sagemaker-model <- Source code for use in this project.
     │
     ├── __init__.py             <- Makes the folder a Python module
@@ -25,6 +26,8 @@ Directory Structure
     │   │   └── ...
     │
     └── Dockerfile              <- The recipe to build the train and predict images
+
+```
 
 
 ## [Sagemaker Channels](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Channel.html)
@@ -63,12 +66,6 @@ The `requirements[-dev].txt` files are generated using [uv](https://github.com/a
 # Install uv tool
 brew install uv
 ```
-
-Within each of the code project folders, the requirements are stored in `requirements/*.in`
-files. The exact package versions are locked using `uv pip compile`. These files are used
-by CI and should be committed to the repo.
-
-
 ```bash
 # Generates requirements.txt
 uv pip compile --python python3.11 src/requirements/base.in -o src/requirements.txt
