@@ -38,13 +38,14 @@ At this project, we will find our channel giles in the path:
 - "opt/ml/input/data/model": for the model
 When running the service locally, the default folder is /data (you can look for our docker-compose that has its an example, we mount the local data/ folder to simulate the container folder structure)
 
-## [Output Model]
+## Output Model
 After the training and generating our important files, we should save everything under the directory "opt/ml/model".
 Sagemaker will pack everything that is under this directory and store it as model.tar.gz.
 This model then can be used to deploy new sagemaker endpoints,
 
 
 Folder structured used by the model (sagemaker):
+```
 /opt/ml
 |-- input
 |   |-- config
@@ -57,6 +58,7 @@ Folder structured used by the model (sagemaker):
 |   `-- <model files> ------> HERE
 
 
+```
 ## Updating Requirements
 
 
