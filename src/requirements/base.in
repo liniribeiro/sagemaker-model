@@ -1,0 +1,5 @@
+s3fs==2024.6.1
+pandas==2.0.2
+sagemaker==2.229.0
+newrelic==8.8.0
+sagemaker-training==4.8.0

@@ -1,0 +1,27 @@
+services:
+  model_train:
+    image: model
+    environment:
+      ENVIRONMENT: ${ENVIRONMENT:-development}
+      DATASET_CHANNEL_PATH: "/opt/app/data"
+      MODEL_CHANNEL_PATH: "/opt/app/data"
+      MODEL_OUTPUT_PATH: "/opt/app/data/model"
+    command: "bash start_train.sh"
+    volumes:
+       - ./src/data:/opt/app/data
+    networks:
+      - backend
+
+
+networks:
+  backend:
+    driver: "bridge"
+
+
+volumes:
+  data:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: .src/data
