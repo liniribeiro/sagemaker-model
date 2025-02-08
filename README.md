@@ -83,3 +83,10 @@ uv pip compile --python python3.11 src/requirements/dev.in -o src/requirements-d
 
 [Joblib](https://joblib.readthedocs.io/en/stable/)
 [Dockerhub image repo](https://hub.docker.com/r/aliniribeiroo/sagemaker-model/tags)
+
+# Machine Learning Workflow
+![ML Workflow](https://github.com/user-attachments/assets/34d495c2-5f4a-4704-a4a2-943d4ac870fa)
+
+
+# Deploying the Model with AWS SageMaker
+ ![Deploying sagemaker model](https://github.com/user-attachments/assets/8b1fa947-ef9d-44f7-805d-e12403311d7c)
